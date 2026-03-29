@@ -1,0 +1,24 @@
+# save-playlist config
+
+# Whether to use cookies from your browser for YouTube authentication
+use_cookies = true
+
+# Which browser to extract cookies from (e.g., "firefox", "chrome", "edge")
+browser = "firefox"
+
+# YouTube-DL remote components to load (e.g., ["ejs:github"])
+remote_components = ["ejs:github"]
+
+# System video player for offline --watch mode (e.g., "mpv", "vlc")
+video_player = "mpv"
+
+# Download presets are checked in order — the first match based on duration wins.
+# Videos longer than all presets will only have metadata and thumbnails saved.
+
+[[presets]]
+max_duration = 600   # 720p for 10 minute videos
+max_height   = 720
+
+[[presets]]
+max_duration = 3600  # 360p for 1 hour videos
+max_height   = 360

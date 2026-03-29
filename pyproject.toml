@@ -1,0 +1,10 @@
+[project]
+name = "playlist-saver"
+version = "0.1.0"
+description = "TUI-based YouTube playlist saver"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "yt-dlp",
+    "iterfzf",
+]
